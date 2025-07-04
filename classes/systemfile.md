@@ -1,0 +1,84 @@
+---
+icon: file
+---
+
+# SystemFile
+
+## Overview
+
+The `SystemFile` class contains abstracted getters and setters for POSIX-defined attributes of a file on the target file system. These include:
+
+* atime (Last accessed)
+* ctime (Creation date)
+* Mode (Permissions)
+* mtime (Last modified)
+* Group (Coming soon)
+* User (Coming soon)
+
+> **Context**
+>
+> POSIX is a group of widely accepted standards to help preserve compatibility between operating systems.
+
+> **Note**
+>
+> Due to a POSIX limitation, you cannot change the ctime of a file.
+
+## Properties
+
+### accessed
+
+Type: `Date`
+
+The `accessed` property returns when the file was last accessed by a program.
+
+### content
+
+Type: `string`
+
+The `content` property returns the current content in the file located at the value of the `SystemFile`'s `path`.
+
+When set, it overwrites the current content of the file with the provided string.
+
+### created
+
+Type: `readonly Date`
+
+The `created` property returns when the file was originally created.
+
+### modified
+
+Type: `Date`
+
+The `modified` property returns when the content of the file was last changed.
+
+### path
+
+Type: `string`
+
+The `path` property returns the full path to the file.
+
+When set, it moves the file to the new location.
+
+### permissions
+
+Type: [`Permissions`](../permissions.md)&#x20;
+
+These are the permissions of the file.
+
+#### everyone
+
+Type: [`RWX`](../rwx.md)&#x20;
+
+The permissions for everyone except the owner and group of the file.
+
+#### group
+
+Type: [`RWX`](../rwx.md)&#x20;
+
+The permissions for the group of the file.
+
+#### user
+
+Type: [`RWX`](../rwx.md)&#x20;
+
+The permissions for the owner of the file.
