@@ -61,24 +61,6 @@ When set, it moves the file to the new location.
 
 ### permissions
 
-Type: [`Permissions`](../interfaces/permissions.md)&#x20;
+Type: [`Permissions`](../interfaces/permissions.md)
 
 These are the permissions of the file.
-
-#### everyone
-
-Type: [`RWX`](../interfaces/rwx.md)&#x20;
-
-The permissions for everyone except the owner and group of the file.
-
-#### group
-
-Type: [`RWX`](../interfaces/rwx.md)&#x20;
-
-The permissions for the group of the file.
-
-#### user
-
-Type: [`RWX`](../interfaces/rwx.md)&#x20;
-
-The permissions for the owner of the file.

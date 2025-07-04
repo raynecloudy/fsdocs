@@ -12,7 +12,7 @@ The `Permissions` interface defines properties that follow the POSIX standard fo
 
 ### everyone
 
-Type: [`RWX`](rwx.md)&#x20;
+Type: [`RWX`](rwx.md)
 
 The permissions for everyone except the owner and group of the file/directory.
 
@@ -24,6 +24,6 @@ The permissions for the group of the file/directory.
 
 ### user
 
-Type: [`RWX`](rwx.md)&#x20;
+Type: [`RWX`](rwx.md)
 
 The permissions for the owner of the file/directory.
