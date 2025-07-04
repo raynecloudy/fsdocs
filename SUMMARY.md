@@ -8,7 +8,5 @@
 
 ## Interfaces
 
-***
-
 * [Permissions](permissions.md)
 * [RWX](rwx.md)
