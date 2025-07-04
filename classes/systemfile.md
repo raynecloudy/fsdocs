@@ -10,9 +10,10 @@ The `SystemFile` class contains abstracted getters and setters for POSIX-defined
 
 * atime (Last accessed)
 * ctime (Creation date)
+* Group (Coming soon)
 * Mode (Permissions)
 * mtime (Last modified)
-* Group (Coming soon)
+* Path
 * User (Coming soon)
 
 > **Context**
@@ -27,13 +28,13 @@ The `SystemFile` class contains abstracted getters and setters for POSIX-defined
 
 ### accessed
 
-Type: `Date`
+Type: `Date`&#x20;
 
 The `accessed` property returns when the file was last accessed by a program.
 
 ### content
 
-Type: `string`
+Type: `string`&#x20;
 
 The `content` property returns the current content in the file located at the value of the `SystemFile`'s `path`.
 
@@ -41,19 +42,19 @@ When set, it overwrites the current content of the file with the provided string
 
 ### created
 
-Type: `readonly Date`
+Type: `readonly Date`&#x20;
 
 The `created` property returns when the file was originally created.
 
 ### modified
 
-Type: `Date`
+Type: `Date`&#x20;
 
 The `modified` property returns when the content of the file was last changed.
 
 ### path
 
-Type: `string`
+Type: `string`&#x20;
 
 The `path` property returns the full path to the file.
 
@@ -61,6 +62,6 @@ When set, it moves the file to the new location.
 
 ### permissions
 
-Type: [`Permissions`](../interfaces/permissions.md)
+Type: [`Permissions`](../interfaces/permissions.md)&#x20;
 
 These are the permissions of the file.

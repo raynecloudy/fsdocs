@@ -10,6 +10,12 @@ The `Permissions` interface defines properties that follow the POSIX standard fo
 
 ## Properties
 
+### code
+
+Type: `number`
+
+This is the "mode" of the file/directory. It's a three-digit number that defines permissions for everyone, group, and user. Learn more about permission modes [here](https://www.linuxfoundation.org/blog/blog/classic-sysadmin-understanding-linux-file-permissions#h-using-binary-references-to-set-permissions).
+
 ### everyone
 
 Type: [`RWX`](rwx.md)

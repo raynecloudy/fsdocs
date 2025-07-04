@@ -4,6 +4,7 @@
 
 ## Classes
 
+* [SystemDirectory](classes/systemdirectory.md)
 * [SystemFile](classes/systemfile.md)
 
 ## Interfaces
